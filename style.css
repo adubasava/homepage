@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    width: 100vw;
+}
+
 .background {
     position: absolute;
     width: 100%;
@@ -17,18 +21,19 @@
 
 .header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 30px 50px;
+    width: 900px;
+    box-sizing: content-box;
 }
 
-.header img {
+.header img, .contact img {
     max-height: 400px;
 }
 
 .about {
     background-color: white;
-    max-width: 600px;
     box-shadow: 0px 2px 6px gray;
     padding: 15px 20px 20px 20px;
 }
@@ -55,7 +60,7 @@ h1 {
 
 .projects {
     margin: 70px 50px;    
-    max-width: 870px;
+    width: 900px;
 }
 
 .cards {
@@ -122,8 +127,37 @@ h4 {
     margin-right: 5px;
 }
 
-.contact {
+.background2 {
     background-color: #188FAE;
+}
+
+.contact {
+    width: 900px;
+    box-sizing: content-box;
     color: white;
-    padding: 30px 50px;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.contact-text {    
+    max-width: 300px;
+}
+
+.contact-text p, .email, .phone {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.links3 svg {
+    margin-right: 15px;
+}
+
+.phone, .email {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

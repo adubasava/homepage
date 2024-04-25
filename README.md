@@ -1,1 +1,1 @@
-# homepage
+# Odin Homepage: Final Project for Advanced HTML and CSS Course 

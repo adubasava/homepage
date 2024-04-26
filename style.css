@@ -16,7 +16,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: #188FAE;
-    transform: skewY(-12deg) translateY(calc(80vw * tan(-30deg)));
+    transform: skew(0deg, -10deg);
+    top: -480px;
     z-index: -1;
     box-shadow: 0px 2px 6px gray;
 }
@@ -26,11 +27,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: 30px 50px;
-    width: 900px;
+    max-width: 900px;
     box-sizing: content-box;
 }
 
-.header img, .contact img {
+.header img, picture img {
     max-height: 400px;
 }
 
@@ -78,7 +79,7 @@ h1 {
 
 .projects {
     margin: 70px 50px;    
-    width: 900px;
+    max-width: 900px;
 }
 
 .cards {
@@ -146,17 +147,9 @@ h4 {
     margin-right: 5px;
 }
 
-.background2 {
+.contact {
     background-color: #188FAE;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact {
-    width: 900px;
-    box-sizing: content-box;
     color: white;
     padding: 40px 50px;
     display: flex;
@@ -183,4 +176,93 @@ h4 {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+@media (max-width: 1100px) {
+
+    .header {        
+        min-width: 320px;
+        max-width: 600px;
+    }
+
+    .name {
+        font-size: 52px;
+        left: 12px;
+    }  
+
+    .about {
+        box-shadow: none;
+        z-index: -2;
+        margin-top: 15px;
+        margin-bottom: 0px;
+        padding: 15px 0px;
+    }
+
+    .about h1, .projects h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .cards, .header, .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact {
+        margin-top: 50px;  
+        padding: 15px 0px 0px 0px;  
+        min-width: 320px;
+    }
+
+    .card {
+        padding: 15px 0px;
+    }
+
+    .screenshot1, .screenshot2, .screenshot3, .screenshot4, .screenshot5, .screenshot6 {
+        font-size: 42px;
+    }
+
+    .links3, .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .contact-text h1:nth-child(1) {
+        text-align: center;
+    }
+
+    .contact-text p:nth-child(2) {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .contact-text p:nth-child(3) {
+        margin-bottom: 30px;
+    }
+
+    .contact-text div:nth-child(4) {
+        margin-bottom: 0px;
+    }
+
+    .phone svg, .email svg {
+        display: none;
+    }
+
+    picture {
+        width: 100%;
+        height: 100%;
+        display: flex;       
+    }
+
+    picture img {
+        object-fit: cover; 
+        height: auto;
+        width: 100%;
+    }
+
 }

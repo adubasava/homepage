@@ -193,7 +193,7 @@ h4 {
     }
 
     .image-container img, picture img {
-        max-height: 350px;
+        max-height: 300px;
     }
 
     .name {
@@ -226,6 +226,11 @@ h4 {
 
     .contact-text {
         font-size: 14px;
+        max-width: 250px;
+    }
+
+    picture img {
+        object-fit: contain;
     }
 
 }
@@ -282,7 +287,8 @@ h4 {
         justify-content: center;
         align-items: center;
     } 
-    
+
+   
     .contact-text h1:nth-child(1) {
         text-align: center;
     }
